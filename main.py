@@ -61,3 +61,25 @@ def decode_string(text):
 # print(decode_string("Success"))
 # print(decode_string("(( @"))
 
+# Написать функцию get_odd_count, которая в качестве параметра 
+# принимает строку и возвращает целое число, которое соответствует количеству четных чисел в строке. 
+# Строка содержит только цифры, без разделителей. Ноль считать нечетным.
+
+# Пример:
+# "2468" => 4
+# "13579" => 0
+# "01234567" => 3
+
+def get_odd_count(text): # четных чисел
+    counter = 0
+    for x in text:
+        x = int(x)
+        if round(x/2) == x/2 and x != 0:
+            counter += 1
+    return(counter)
+
+print(get_odd_count("2468"))
+print(get_odd_count("13579"))
+print(get_odd_count("01234567"))
+
+
