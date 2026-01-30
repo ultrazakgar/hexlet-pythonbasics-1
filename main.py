@@ -48,12 +48,14 @@ def count_capital_letters(text):
 
 def decode_string(text):
     n = ""
+    text = text.lower()
     for x in text:
         if text.count(x) == 1:
-            x += "("
+            n += "("
         else:
-            x += ")"
+            n += ")"
     return(n)
 
 print(decode_string("din"))
-
+print(decode_string("recede"))
+print(decode_string("Success"))
