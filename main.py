@@ -56,6 +56,8 @@ def decode_string(text):
             n += ")"
     return(n)
 
-print(decode_string("din"))
-print(decode_string("recede"))
-print(decode_string("Success"))
+# print(decode_string("din"))
+# print(decode_string("recede"))
+# print(decode_string("Success"))
+# print(decode_string("(( @"))
+
